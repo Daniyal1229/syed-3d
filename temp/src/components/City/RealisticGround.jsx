@@ -43,41 +43,6 @@ export default function RealisticGround() {
         <planeGeometry args={[40, 1]} />
         <meshStandardMaterial color="#808080" roughness={0.8} />
       </mesh>
-      
-      {/* Street trees for realism */}
-      {Array.from({ length: 20 }).map((_, i) => {
-        const z = -40 + i * 4
-        return (
-          <group key={`tree-${i}`}>
-            {/* Left side trees */}
-            <group position={[-8, 0, z]}>
-              {/* Trunk */}
-              <mesh castShadow position={[0, 1.5, 0]}>
-                <cylinderGeometry args={[0.2, 0.25, 3, 8]} />
-                <meshStandardMaterial color="#654321" roughness={1} />
-              </mesh>
-              {/* Foliage */}
-              <mesh castShadow position={[0, 3.5, 0]}>
-                <sphereGeometry args={[1.2, 8, 8]} />
-                <meshStandardMaterial color="#2d5016" roughness={0.9} />
-              </mesh>
-            </group>
-            
-            {/* Right side trees */}
-            <group position={[8, 0, z]}>
-              <mesh castShadow position={[0, 1.5, 0]}>
-                <cylinderGeometry args={[0.2, 0.25, 3, 8]} />
-                <meshStandardMaterial color="#654321" roughness={1} />
-              </mesh>
-              <mesh castShadow position={[0, 3.5, 0]}>
-                <sphereGeometry args={[1.2, 8, 8]} />
-                <meshStandardMaterial color="#2d5016" roughness={0.9} />
-              </mesh>
-            </group>
-          </group>
-        )
-      })}
     </>
   )
 }
-

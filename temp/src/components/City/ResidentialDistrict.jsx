@@ -2,7 +2,7 @@ import { Text } from '@react-three/drei'
 
 export default function ResidentialDistrict() {
   return (
-    <group position={[-25, 0, 5]}>
+    <group position={[-25, 0, 15]}>
       {/* Modern House 1 - Main Home */}
       <group position={[0, 0, 0]}>
         {/* Foundation */}
@@ -219,4 +219,3 @@ export default function ResidentialDistrict() {
     </group>
   )
 }
-

@@ -2,7 +2,7 @@ import { Text } from '@react-three/drei'
 
 export default function EducationBlock() {
   return (
-    <group position={[-25, 0, -15]}>
+    <group position={[-25, 0, -25]}>
       {/* SCHOOL 1 - St. Anthony's (Modern School Building) */}
       <group position={[0, 0, 0]}>
         {/* Main Building */}
@@ -303,4 +303,3 @@ export default function EducationBlock() {
     </group>
   )
 }
-

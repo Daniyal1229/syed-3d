@@ -66,40 +66,6 @@ export default function Signboards() {
         </group>
       </group>
       
-      {/* SIGNBOARD 3 - Bridge Ahead */}
-      <group position={[2, 0, -30]}>
-        <mesh castShadow>
-          <cylinderGeometry args={[0.1, 0.1, 3, 16]} />
-          <meshStandardMaterial color="#4a4a4a" metalness={0.7} roughness={0.3} />
-        </mesh>
-        
-        <group position={[0, 1.5, 0]}>
-          <mesh castShadow>
-            <boxGeometry args={[2.5, 0.8, 0.1]} />
-            <meshStandardMaterial color="#ca8a04" metalness={0.3} roughness={0.6} />
-          </mesh>
-          
-          <Text
-            position={[0, 0.2, 0.06]}
-            fontSize={0.25}
-            color="#000000"
-            anchorX="center"
-            anchorY="middle"
-          >
-            BRIDGE AHEAD
-          </Text>
-          
-          <Text
-            position={[0, -0.2, 0.06]}
-            fontSize={0.15}
-            color="#000000"
-            anchorX="center"
-            anchorY="middle"
-          >
-            Experience District
-          </Text>
-        </group>
-      </group>
       
       {/* SIGNBOARD 4 - After Bridge */}
       <group position={[1, 0, -45]}>
@@ -181,4 +147,3 @@ export default function Signboards() {
     </>
   )
 }
-
